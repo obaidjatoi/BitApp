@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_activity_nav_graph"
+    app:startDestination="@id/allPairsFragment">
+    <fragment
+        android:id="@+id/allPairsFragment"
+        android:name="com.android.bitapp.view.fragments.AllPairsFragment"
+        android:label="AllPairsFragment">
+        <action
+            android:id="@+id/action_allPairsFragment_to_pairDetails"
+            app:destination="@id/pairDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/pairDetails"
+        android:name="com.android.bitapp.view.fragments.PairDetails"
+        android:label="PairDetails" />
+</navigation>
